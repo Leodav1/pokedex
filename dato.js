@@ -16,7 +16,7 @@ for (let i = 0; i < data.length; i++) {
     pokemonImage.src = `pokemones/${pokemonData.thumbnail}`;
     pokemonImage.alt = pokemonData.name;
 
-    const pokemonName = document.createElement("p");
+    const pokemonName = document.createElement("h2");
     pokemonName.textContent = pokemonData.name;
 
     const pokemonId = document.createElement("p");
@@ -37,8 +37,8 @@ for (let i = 0; i < data.length; i++) {
 
     pokemonCard.appendChild(pokemonImage);
 
-    pokemonCardInfo.appendChild(pokemonName);
     pokemonCardInfo.appendChild(pokemonId);
+    pokemonCardInfo.appendChild(pokemonName);
     pokemonCardInfo.appendChild(pokemonTypesList);
 
     pokemonCard.appendChild(pokemonCardInfo);

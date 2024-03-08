@@ -46,3 +46,54 @@ body {
     flex-wrap: wrap;
     gap: 4px;
 }
+
+.pokemon-type-item {
+    background-color: #a9a9a9;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color:white;
+}
+
+.pokemon-type-item.fairy {
+    background-color: #fd79a8;
+}
+
+.pokemon-type-item.plant {
+    background-color: #00710f;
+}
+
+.pokemon-type-item.poison {
+    background-color: #6e005c;
+}
+
+.pokemon-type-item.fire {
+    background-color: #7f0000;
+}
+
+.pokemon-type-item.bug {
+    background-color: #00e836;
+    color: #000000;
+}
+
+.pokemon-type-item.phychic {
+    background-color: #b700ef;
+}
+
+.pokemon-type-item.ice {
+    background-color: #00b3f4;
+}
+
+.pokemon-type-item.water {
+    background-color: #1c00d0;
+}
+
+.pokemon-type-item.ground {
+    background-color: #5a7251;
+    
+}
+
+.pokemon-type-item.dark {
+    background-color: #373737;
+    color:white;
+}
+    
