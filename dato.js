@@ -2,6 +2,29 @@ import { data } from "./poke.js";
 
 const pokedexContainer = document.getElementById("pokedex-container");
 
+{/* <div class="logo-container">
+     <img src="la url del logo" class="pokemon-logo-img" />
+     <img src="la url de la pokebola" class="pokeball-img" />
+</div> */}
+
+const logoContainer = document.createElement("div");
+logoContainer.classList.add("logo-container")
+
+const pokemonLogoImg = document.createElement("img");
+pokemonLogoImg.classList.add("pokemon-logo-img");
+pokemonLogoImg.src = "pokemones/pokemon_logo.png";
+pokemonLogoImg.alt = "pokemon logo img";
+
+const pokeballImg = document.createElement("img");
+pokeballImg.classList.add("pokeball-img");
+pokeballImg.src = "pokemones/pokeball.png";
+pokeballImg.alt = "pokeball img";
+
+logoContainer.appendChild(pokemonLogoImg)
+logoContainer.appendChild(pokeballImg)
+
+pokedexContainer.appendChild(logoContainer)
+
 for (let i = 0; i < data.length; i++) {
     const pokemonData = data[i];
 
