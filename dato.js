@@ -5,28 +5,27 @@ const pokedexContainer = document.getElementById("pokedex");
 for (let i = 0; i < data.length; i++) {
     const pokemon = data[i];
 
-    const card = document.createElement("div");
-    card.classList.add("pokemon-card");
+    const pokemonCard = document.createElement("div");
+    pokemonCard.classList.add("pokemon-card");
 
-    const image = document.createElement("img");
-    image.classList.add("pokemones");
-    image.src = `pokemones/${pokemon.thumbnail}`;
-    image.alt = pokemon.name;
+    const pokemonImage = document.createElement("img");
+    pokemonImage.classList.add("pokemon-image");
+    pokemonImage.src = `pokemones/${pokemon.thumbnail}`;
+    pokemonImage.alt = pokemon.name;
 
-    const name = document.createElement("p");
-    name.textContent = pokemon.name;
+    const pokemonName = document.createElement("p");
+    pokemonName.textContent = pokemon.name;
 
-    const id = document.createElement("p");
-    id.textContent = `id: ${pokemon.id}`;
+    const pokemonId = document.createElement("p");
+    pokemonId.textContent = `id: ${pokemon.id}`;
 
-    const types = document.createElement("p");
-    types.textContent = `Type: ${pokemon.type.join(", ")}`;
+    const pokemonTypes = document.createElement("p");
+    pokemonTypes.textContent = `Type: ${pokemon.type.join(", ")}`;
 
-    card.appendChild(image);
-    card.appendChild(name);
-    card.appendChild(id);
-    card.appendChild(types);
+    pokemonCard.appendChild(pokemonImage);
+    pokemonCard.appendChild(pokemonName);
+    pokemonCard.appendChild(pokemonId);
+    pokemonCard.appendChild(pokemonTypes);
 
-    pokedexContainer.appendChild(card);
+    pokedexContainer.appendChild(pokemonCard);
 }
-console.log(data)
