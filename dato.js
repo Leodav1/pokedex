@@ -1,6 +1,10 @@
 import { data } from "./poke.js";
 
+
 const pokedexContainer = document.getElementById("pokedex-container");
+
+const pokemonCardsList = document.createElement("ul");
+pokemonCardsList.classList.add('pokemon-cards-list');
 
 {/* <div class="logo-container">
      <img src="la url del logo" class="pokemon-logo-img" />
@@ -23,12 +27,10 @@ pokeballImg.alt = "pokeball img";
 logoContainer.appendChild(pokemonLogoImg)
 logoContainer.appendChild(pokeballImg)
 
-pokedexContainer.appendChild(logoContainer)
-
 for (let i = 0; i < data.length; i++) {
     const pokemonData = data[i];
 
-    const pokemonCard = document.createElement("div");
+    const pokemonCard = document.createElement("li");
     pokemonCard.classList.add("pokemon-card");
 
     const pokemonCardInfo = document.createElement("div");
@@ -66,5 +68,9 @@ for (let i = 0; i < data.length; i++) {
 
     pokemonCard.appendChild(pokemonCardInfo);
 
-    pokedexContainer.appendChild(pokemonCard);
+    pokemonCardsList.appendChild(pokemonCard);
 }
+
+
+pokedexContainer.appendChild(logoContainer)
+pokedexContainer.appendChild(pokemonCardsList)

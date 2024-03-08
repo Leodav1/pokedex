@@ -9,12 +9,19 @@ body {
 }
 
 .flex-container {
+    width: 1024px;
+    max-width: 100%;
+    margin-bottom: 300px;
+}
+
+.pokemon-cards-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 1024px;
-    margin-bottom: 300px;
-
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 .pokemon-card {
@@ -99,3 +106,44 @@ body {
     color:white;
 }
     
+.logo-container {
+    width: 100%;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.pokemon-logo-img {
+    width: 100%;
+    position: relative;
+}
+
+.pokeball-img {
+    width: 80px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*
+mobile firts, media queries
+*/
+
+@media (min-width: 500px) {
+    .pokeball-img {
+        width: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .pokeball-img {
+        width: 130px;
+    }
+}
+
+@media (min-width: 992px) {
+    .pokeball-img {
+        width: 150px;
+        bottom: 30px;
+    }
+}
