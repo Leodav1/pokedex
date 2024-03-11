@@ -6,11 +6,6 @@ const pokedexContainer = document.getElementById("pokedex-container");
 const pokemonCardsList = document.createElement("ul");
 pokemonCardsList.classList.add('pokemon-cards-list');
 
-{/* <div class="logo-container">
-     <img src="la url del logo" class="pokemon-logo-img" />
-     <img src="la url de la pokebola" class="pokeball-img" />
-</div> */}
-
 const logoContainer = document.createElement("div");
 logoContainer.classList.add("logo-container")
 

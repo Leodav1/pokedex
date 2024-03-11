@@ -157,10 +157,6 @@ body {
     animation: pokeballRiseFade 1s ease-out forwards;
 }
 
-/*
-mobile firts, media queries
-*/
-
 @media (min-width: 500px) {
     .pokeball-img {
         width: 100px;
